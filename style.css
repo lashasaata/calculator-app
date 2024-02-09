@@ -18,7 +18,7 @@ header {
 #title {
   font-size: 3.2rem;
   letter-spacing: -0.53px;
-  margin-bottom: 0px;
+  margin: 10px 0px 0px;
 }
 span {
   font-size: 1.2rem;
@@ -171,4 +171,53 @@ button {
 #equal:hover {
   cursor: pointer;
   background-color: #f96b5b;
+}
+@media (max-width: 425px) {
+  header {
+    gap: 129px;
+  }
+  #section {
+    width: 327px;
+    height: 88px;
+  }
+  #display {
+    font-size: 4rem;
+    letter-spacing: -0.67px;
+    margin: 29px 24px 0px 0px;
+  }
+  main {
+    width: 327px;
+    height: 420px;
+    gap: 13px;
+  }
+  button {
+    width: 60px;
+    height: 64px;
+
+    font-size: 3.2rem;
+    letter-spacing: -0.53px;
+  }
+  .buttonsDiv {
+    gap: 13px;
+    margin-left: 24px;
+  }
+  #delete {
+    font-size: 2rem;
+    letter-spacing: -0.33px;
+  }
+  #reset {
+    width: 133px;
+    height: 64px;
+    font-size: 2rem;
+    letter-spacing: -0.33px;
+  }
+  #equal {
+    width: 133px;
+    height: 64px;
+    font-size: 2rem;
+    letter-spacing: -0.33px;
+  }
+  .footer {
+    gap: 13px;
+  }
 }
