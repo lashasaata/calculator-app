@@ -8,6 +8,43 @@
     <title>calculator-app</title>
   </head>
   <body>
+    <header>
+      <span id="title">calc</span>
+      <div>
+        <span>THEME</span>
+        <div class="change">
+          <span class="changeNums">123</span>
+          <input type="range" min="1" max="3" value="1" id="switch" />
+        </div>
+      </div>
+    </header>
+    <section id="section">
+      <p id="display">399,981</p>
+    </section>
+    <main>
+      <div class="buttonsDiv">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <div><button id="delete">DEL</button></div>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number" id="plus">+</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number" id="minus">-</button>
+        <button class="number" id="point">.</button>
+        <button class="number">0</button>
+        <button class="number" id="divide">/</button>
+        <button class="number" id="multiply">x</button>
+      </div>
+      <div class="footer">
+        <button id="reset">RESET</button>
+        <button id="equal">=</button>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
