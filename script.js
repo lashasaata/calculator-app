@@ -75,6 +75,9 @@ equal.addEventListener("click", () => {
   let stringWithoutCommas = exactStr.replace(/,/g, "").replace(/x/g, "*");
   let evaluated = eval(stringWithoutCommas);
   let floored = Math.floor(evaluated * 1e6) / 1e6;
+  if (isNaN(floored)) {
+    floored = "";
+  }
   display.innerText = `${floored}`;
 });
 
