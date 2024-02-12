@@ -4,11 +4,19 @@ html {
 }
 body {
   font-family: "League Spartan";
-  background-color: #3a4663;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+.theme1 {
+  background-color: #3a4663;
+}
+.theme2 {
+  background-color: #e6e6e6;
+}
+.theme3 {
+  background-color: #17062a;
 }
 header {
   display: flex;
@@ -26,8 +34,16 @@ span {
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
-  color: #fff;
   margin-bottom: 6px;
+}
+.theme1 span {
+  color: #fff;
+}
+.theme2 span {
+  color: #36362c;
+}
+.theme3 span {
+  color: #ffe53d;
 }
 header div {
   display: flex;
@@ -56,9 +72,17 @@ header div {
   width: 71px;
   height: 26px;
   border-radius: 13px;
-  background-color: #242d44;
   -webkit-appearance: none;
   appearance: none;
+}
+.theme1 #switch {
+  background-color: #242d44;
+}
+.theme2 #switch {
+  background-color: #d2cdcd;
+}
+.theme3 #switch {
+  background-color: #1e0936;
 }
 #switch::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -66,18 +90,34 @@ header div {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #d03f2f;
   margin-left: 1px;
   cursor: pointer;
 }
-section {
+.theme1 #switch::-webkit-slider-thumb {
+  background-color: #d03f2f;
+}
+.theme2 #switch::-webkit-slider-thumb {
+  background-color: #c85402;
+}
+.theme3 #switch::-webkit-slider-thumb {
+  background-color: #00ded0;
+}
+#section {
   width: 540px;
   height: 128px;
   border-radius: 10px;
-  background-color: #181f33;
   margin-top: 8px;
   display: flex;
   justify-content: flex-end;
+}
+.theme1 #section {
+  background-color: #181f33;
+}
+.theme2 #section {
+  background-color: #eeeeee;
+}
+.theme3 #section {
+  background-color: #1e0936;
 }
 #display {
   margin: 40px 32px 0px 0px;
@@ -86,7 +126,15 @@ section {
   line-height: normal;
   letter-spacing: -0.93px;
   text-align: right;
+}
+.theme1 #display {
   color: #fff;
+}
+.theme2 #display {
+  color: #36362c;
+}
+.theme3 #display {
+  color: #ffe53d;
 }
 main {
   width: 540px;
@@ -95,13 +143,22 @@ main {
   border-radius: 10px;
   margin-bottom: 96px;
   gap: 24px;
-  background-color: #242d44;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+.theme1 main {
+  background-color: #242d44;
+}
+.theme2 main {
+  background-color: #d2cdcd;
+}
+.theme3 main {
+  background-color: #1e0936;
+}
+
 .buttonsDiv {
   display: flex;
   flex-wrap: wrap;
@@ -112,8 +169,7 @@ button {
   width: 101px;
   height: 64px;
   border-radius: 10px;
-  box-shadow: inset 0 -4px 0 0 #b3a497;
-  background-color: #eae3dc;
+
   border: none;
 
   font-size: 4rem;
@@ -123,24 +179,64 @@ button {
   line-height: normal;
   letter-spacing: -0.67px;
   text-align: center;
-  color: #434a59;
+
   font-family: "League Spartan";
 }
+.theme1 button {
+  box-shadow: inset 0 -4px 0 0 #b3a497;
+  background-color: #eae3dc;
+  color: #434a59;
+}
+.theme2 button {
+  box-shadow: inset 0 -4px 0 0 #a79e91;
+  background-color: #e5e4e1;
+  color: #36362c;
+}
+.theme3 button {
+  box-shadow: inset 0 -4px 0 0 #881c9e;
+  background-color: #331c4d;
+  color: #ffe53d;
+}
 #delete {
-  box-shadow: inset 0 -4px 0 0 #414e73;
-  background-color: #647198;
-
   font-size: 2.8rem;
   letter-spacing: -0.47px;
   color: #fff;
 }
-#delete:hover {
+.theme1 #delete {
+  box-shadow: inset 0 -4px 0 0 #414e73;
+  background-color: #647198;
+}
+.theme2 #delete {
+  box-shadow: inset 0 -4px 0 0 #1b6066;
+  background-color: #378187;
+}
+.theme3 #delete {
+  box-shadow: inset 0 -4px 0 0 #be15f4;
+  background-color: #56077c;
+}
+.theme1 #delete:hover {
   cursor: pointer;
   background-color: #a2b2e1;
 }
-.number:hover {
+.theme2 #delete:hover {
+  cursor: pointer;
+  background-color: #62b5bc;
+}
+.theme3 #delete:hover {
+  cursor: pointer;
+  background-color: #8631af;
+}
+.theme1 .number:hover {
   cursor: pointer;
   background-color: #fffffe;
+}
+.theme2 .number:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+.theme3 .number:hover {
+  cursor: pointer;
+  background-color: #6c34ac;
 }
 .footer {
   display: flex;
@@ -148,29 +244,64 @@ button {
 }
 #reset {
   width: 227px;
-  box-shadow: inset 0 -4px 0 0 #414e73;
-  background-color: #647198;
-
   font-size: 2.8rem;
   letter-spacing: -0.47px;
   color: #fff;
 }
-#reset:hover {
+.theme1 #reset {
+  box-shadow: inset 0 -4px 0 0 #414e73;
+  background-color: #647198;
+}
+.theme2 #reset {
+  box-shadow: inset 0 -4px 0 0 #1b6066;
+  background-color: #378187;
+}
+.theme3 #reset {
+  box-shadow: inset 0 -4px 0 0 #be15f4;
+  background-color: #56077c;
+}
+.theme1 #reset:hover {
   cursor: pointer;
   background-color: #a2b2e1;
 }
+.theme2 #reset:hover {
+  cursor: pointer;
+  background-color: #62b5bc;
+}
+.theme3 #reset:hover {
+  cursor: pointer;
+  background-color: #8631af;
+}
 #equal {
   width: 227px;
-  box-shadow: inset 0 -4px 0 0 #93261a;
-  background-color: #d03f2f;
-
   font-size: 2.8rem;
   letter-spacing: -0.47px;
   color: #fff;
 }
-#equal:hover {
+.theme1 #equal {
+  box-shadow: inset 0 -4px 0 0 #93261a;
+  background-color: #d03f2f;
+}
+.theme2 #equal {
+  box-shadow: inset 0 -4px 0 0 #873901;
+  background-color: #c85402;
+}
+.theme3 #equal {
+  box-shadow: inset 0 -4px 0 0 #6cf9f1;
+  background-color: #00ded0;
+  color: #1a2327;
+}
+.theme1 #equal:hover {
   cursor: pointer;
   background-color: #f96b5b;
+}
+.theme2 #equal:hover {
+  cursor: pointer;
+  background-color: #ff8a38;
+}
+.theme3 #equal:hover {
+  cursor: pointer;
+  background-color: #93fff8;
 }
 @media (max-width: 425px) {
   header {
