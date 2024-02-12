@@ -34,8 +34,12 @@ numbersArr.forEach((element) => {
     if (isNaN(Number([...displaystext][length - 1])) && isNaN(Number(value))) {
       displayArr.splice(length - 1, 1);
     }
-
-    displayArr.push(value);
+    // not to go beyond the box
+    if (displayArr.length < 14) {
+      displayArr.push(value);
+    } else {
+      //do nothind
+    }
 
     let newText = displayArr.join("");
     // trying set "," after 3 number but needs finish
